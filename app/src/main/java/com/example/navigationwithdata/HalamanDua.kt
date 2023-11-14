@@ -40,6 +40,10 @@ fun HalamanDua (
             modifier = Modifier.padding(dimensionResource(R.dimen.padding_medium)),
             verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small))
             ) {
+            Text(text = "Nama")
+            Text(text = orderUIState.nama)
+            Divider()
+            Spacer(modifier = Modifier.padding(16.dp))
             items.forEach { item ->
                 Column {
                     Text(item.first.uppercase())
