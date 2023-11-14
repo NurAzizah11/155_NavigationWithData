@@ -2,6 +2,7 @@ package com.example.navigationwithdata
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -54,5 +55,7 @@ fun HalamanForm(
             value = telponTxt,
             onValueChange = {telponTxt = it},
             label = { Text(text = "Telepon") })
+
+        Spacer(modifier = Modifier.padding(16.dp))
     }
 }
