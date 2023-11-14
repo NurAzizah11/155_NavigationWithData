@@ -30,6 +30,8 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.example.esjumbo.PengelolaHalaman
 
 @Composable
 fun HalamanSatu(
@@ -124,6 +126,9 @@ fun HalamanSatu(
                 }
             }
         }
+    }
+    fun cancelOrderAndNavigateToFormulir(navController: NavController) {
+        navController.popBackStack(PengelolaHalaman.Formulir.name, inclusive = false)
     }
 }
 
