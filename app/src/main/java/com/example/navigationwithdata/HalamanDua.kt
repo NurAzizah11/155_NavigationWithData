@@ -44,6 +44,10 @@ fun HalamanDua (
             Text(text = orderUIState.nama)
             Divider()
             Spacer(modifier = Modifier.padding(16.dp))
+            Text(text = "Alamat")
+            Text(text = orderUIState.alamat)
+            Divider()
+            Spacer(modifier = Modifier.padding(16.dp))
             items.forEach { item ->
                 Column {
                     Text(item.first.uppercase())
