@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -38,6 +40,19 @@ fun HalamanForm(
             .fillMaxWidth()
             .padding(16.dp)
     ) {
+        OutlinedTextField(
+            value = namaTxt,
+            onValueChange = {namaTxt = it},
+            label = { Text(text = "Nama") })
 
+        OutlinedTextField(
+            value = alamatTxt,
+            onValueChange = {alamatTxt = it},
+            label = { Text(text = "Alamat") })
+
+        OutlinedTextField(
+            value = telponTxt,
+            onValueChange = {telponTxt = it},
+            label = { Text(text = "Telepon") })
     }
 }
